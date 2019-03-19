@@ -1,0 +1,9 @@
+#!/bin/bash
+/opt/gitlab/embedded/bin/runsvdir-start &
+if [ $? -ne 0 ]; then
+    echo "fail run deamon process!"
+    exit 2
+else
+    echo "success run deamon process!"
+    exit 0
+fi
